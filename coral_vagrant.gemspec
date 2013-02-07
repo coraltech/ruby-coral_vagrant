@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "Vagrantfile",
+    "coral_vagrant.gemspec",
     "lib/coral_vagrant.rb",
     "lib/coral_vagrant/commands/coral_base.rb",
     "lib/coral_vagrant/commands/coral_init.rb",
