@@ -31,7 +31,9 @@ Gem::Specification.new do |s|
     "lib/coral_vagrant/commands/coral_init.rb",
     "lib/coral_vagrant/commands/coral_push.rb",
     "lib/coral_vagrant/commands/coral_run.rb",
-    "lib/coral_vagrant/commands/coral_update.rb"
+    "lib/coral_vagrant/commands/coral_update.rb",
+    "spec/coral_test_kernel.rb",
+    "spec/spec_helper.rb"
   ]
   s.homepage = "http://github.com/coraltech/ruby-coral_vagrant"
   s.licenses = ["GPLv3"]
