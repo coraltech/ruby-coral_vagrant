@@ -15,7 +15,7 @@ doc
 # jeweler generated
 pkg
 
-# gem
+# Gem specific
 *.gem
 
 # Have editor/IDE/OS specific files you need to ignore? Consider using a global gitignore: 
@@ -50,3 +50,8 @@ pkg
 
 # For rubinius:
 #*.rbc
+
+# For Eclipse IDE:
+.project
+.buildpath
+.cache
