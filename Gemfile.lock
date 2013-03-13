@@ -6,7 +6,7 @@ GEM
       ffi (~> 1.0, >= 1.0.11)
     coral_cloud (0.1.2)
       coral_core (~> 0.1)
-    coral_core (0.1.5)
+    coral_core (0.1.6)
       git (= 1.2.5)
       json (>= 1.4)
       log4r (~> 1.1)
