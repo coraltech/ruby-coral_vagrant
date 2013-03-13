@@ -56,7 +56,7 @@ module Vagrant
   #-----------------------------------------------------------------------------
   # Constructor / Destructor
 
-  def init(directory, submodule = 'config', config_file = 'cloud.json')
+  def self.init(directory, submodule = 'config', config_file = 'cloud.json')
     return Coral.create_cloud(:vagrant, {
       :directory   => directory, 
       :submodule   => submodule,
