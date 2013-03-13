@@ -34,8 +34,8 @@ class Run < Base
     plans.each do |plan_name|
       @logger.debug("Running plan: #{plan_name}")
                    
-      success = Coral.create_plan(plan_name, {
-        :home        => Coral.vagrant, 
+      success = ::Coral.create_plan(plan_name, {
+        :home        => ::Coral.vagrant, 
         :submodule   => options[:repo], 
         :config_file => "#{options[:directory]}/#{plan_name}.json",
         :logger      => @logger,

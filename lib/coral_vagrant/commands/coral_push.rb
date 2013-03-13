@@ -64,8 +64,8 @@ class Push < Base
     remotes.each do |remote_name|
       @env.ui.info("Starting push for: #{remote_name}")
           
-      server = Coral::Server.new({
-        :cloud   => Coral.vagrant,
+      server = ::Coral::Cloud::Server.new({
+        :cloud   => ::Coral.vagrant,
         :machine => remote_name,
         :logger  => @logger,
         :ui      => @env.ui,

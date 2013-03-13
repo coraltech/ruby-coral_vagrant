@@ -57,8 +57,8 @@ class Init < Base
     with_target_vms(servers) do |vm|
       @env.ui.info("Starting initialization run for: #{vm.name}")
           
-      server = Coral::Server.new({
-        :cloud   => Coral.vagrant,
+      server = ::Coral::Cloud::Server.new({
+        :cloud   => ::Coral.vagrant,
         :machine => vm,
         :logger  => @logger,
         :ui      => @env.ui,

@@ -46,8 +46,8 @@ class Update < Base
     with_target_vms(servers) do |vm|
       @env.ui.info("Starting update run for: #{vm.name}")
           
-      success = Coral::Server.new({
-        :cloud   => Coral.vagrant,
+      success = ::Coral::Cloud::Server.new({
+        :cloud   => ::Coral.vagrant,
         :machine => vm,
         :logger  => @logger,
         :ui      => @env.ui,
