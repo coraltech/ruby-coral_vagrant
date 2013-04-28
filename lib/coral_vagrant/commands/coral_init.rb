@@ -30,7 +30,7 @@ class Init < Base
         options[:min] = m
       end     
           
-      options[:tries] = 5
+      options[:tries] = 1
       opts.on("-t", "--tries TRIES", "Number of provision attempts before stopping with an error") do |t|
         options[:tries] = t
       end
